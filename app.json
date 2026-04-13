@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Fitted",
+    "slug": "fitted",
+    "version": "1.0.0",
+    "scheme": "fitted",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#e8e8e6",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Fitted to access your camera to photograph clothing items."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Fitted to access your photos to add clothing items."
+        }
+      ],
+      "expo-apple-authentication"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fitted.app"
+    },
+    "android": {
+      "package": "com.fitted.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#e8e8e6"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    }
+  }
+}
